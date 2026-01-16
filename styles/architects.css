@@ -129,7 +129,7 @@ main > section {
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 .fact-card {
 
@@ -195,6 +195,10 @@ main > section {
         grid-template-columns: 1fr;
     }
 
+    .facts-container {
+        justify-items: center;
+        gap: 18px;
+    }
     .our-features{
         margin-left: 20px;
     }
