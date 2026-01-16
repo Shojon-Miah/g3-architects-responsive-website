@@ -1,8 +1,10 @@
 
 /* share style */
+
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 .work-sans-font {
@@ -10,19 +12,23 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
- 
+  
 }
 
 .display-flex {
     display: flex;
 }
 
-/* dark 02 */
+/* dark */
 .text-color-dark2 {
 
     color: #424242;
 }
 
+.text-color-dark3 {
+
+    color: #727272;
+}
 /* header style */
 
 .header-bg-color {
@@ -30,25 +36,119 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+
 /* navbar related style */
 
 .navbar {
     justify-content: space-between;
-    padding: 25px 50px;
-
-    /* display: flex; */
+    align-items: center;
+    /* padding: 25px 50px; */
 }
 
+.brand {
+
+    color: #131313;
+    font-size: 3rem;
+}
 .nav-item {
 
     list-style: none;
     margin: 15px;
 }
 
-
 .nav-link{
     text-decoration: none;
+    font-weight: 500;
 }
 
+.navbar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* padding: 25px 50px; */
+}
 
+.baneer-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-explore {
+    background-color: #FF900E;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+}
+
+.banner-img {
+
+    width: 100%;
+}
+
+main{
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section {
+
+    margin-top: 130px;
+}
+
+.our-features {
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#quick-list {
+    font-weight: 500;
+}
+
+/* teams and features related styles */
+
+.teams {
+    align-items: center;
+}
+
+.team-img-container{
+
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 24px;
+}
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+
+    .navbar, .nav-links {
+        flex-direction: column;
+    }
+    
+    /* .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-features{
+        margin-left: 20px;
+    }
+
+     */
+}
