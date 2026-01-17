@@ -186,7 +186,7 @@ main > section {
 
 .features {
 
-    gap: 100px;
+    gap: 140px;
 }
 
 .section-title {
@@ -215,6 +215,21 @@ main > section {
     margin-bottom: 0;
 }
 
+#experience-badge {
+    background-color: #FF900E;
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+
+}
+
+#experience-year {
+
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 /* sponsors styles  */
 
@@ -243,7 +258,7 @@ main > section {
 @media screen and (max-width: 576px) {
 
     .navbar, 
-    .nav-links, 
+    .nav-links,
     .teams {
 
         flex-direction: column;
